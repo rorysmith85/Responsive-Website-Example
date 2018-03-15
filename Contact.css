@@ -1,0 +1,620 @@
+body * {
+  box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFF7;
+}
+
+
+/*nav*/
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookstore_mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  font-family: 'Old Standard TT', serif;
+  color: white;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: .3em;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding-top: .2em;
+}
+
+.banner h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.logo h4 span {
+  border: 1px solid white;
+  padding: .3em .5em;
+  border-radius: 5px;
+}
+
+.banner {
+  padding-top: 1em;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item {
+  height: 2em;
+  width: 2em;
+}
+
+.social img:first-child {
+  height: 1.5em;
+  width: 1.5em;
+  padding-right: .2em;
+}
+
+/*end of nav*/
+
+/*Contact*/
+.container {
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.headline {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+  flex-wrap: wrap;
+  font-family: 'Lora', serif;
+}
+
+ .headline h2 {
+  font-size: 46px;
+  margin:0;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .headline h2:nth-of-type(1) {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.container .headline h2:nth-of-type(3) {
+  padding-bottom: 1em;
+}
+
+.details {
+  display:flex;
+  flex-direction: column;
+  font-family: 'Lora', serif;
+  align-items: center;
+}
+
+.details h4 {
+  font-size: 24px;
+}
+
+.line {
+  width:30px;
+  border-bottom: 2px solid black;
+}
+
+.details p {
+  font-size: 20px;
+  padding-bottom: 1.5em;
+}
+
+
+/*bottom nav*/
+
+.nav-bottom .nav-item {
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Old Standard TT', serif;
+  color: black;
+  background-color: #0F0E0C;
+  margin-top: 1em;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: .75em 0;
+}
+
+.nav-bottom .nav-item {
+  color: white;
+  font-size: 10px;
+  font-size: .8em;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: .75em;
+}
+
+.social-footer .social-item {
+  height: 2em;
+  width: 2em;
+}
+
+.social-footer .social-item:first-child {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.copyright p {
+  font-size: .5em;
+}
+
+/*end of bottom nav*/
+
+@media only screen and (min-width: 501px) and (max-width: 910px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookdoor-wide.jpg);
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    height: 200px;
+    margin-bottom: 30px;
+    width: 100%;
+    z-index: 999;
+  }
+  .banner {
+    color: black;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    color: white;
+  }
+  .banner h2 {
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+  .nav span {
+    border: 1px solid white;
+    padding: .4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .logo h4 span {
+    border: 1px solid white;
+    padding: .3em .5em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .nav .nav-item {
+    color: white;
+    font-size: .6em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-self: center;
+    padding-top: .3em;
+    color: white;
+  }
+  .social {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  }
+  #nav1 {
+    order: 3;
+  }
+  #nav2 {
+    order: 4;
+  }
+  #nav3 {
+    order: 1;
+  }
+  #nav4 {
+    order: 2;
+  }
+  /*end of nav*/
+
+  .details h4 {
+    padding-bottom: 1.5em;
+  }
+
+  .details p {
+    padding:1.5em 0;
+  }
+
+  .details {
+    padding-bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 911px) and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookdoor-wide.jpg);
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    height: 200px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .banner {
+    color: black;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    color: white;
+  }
+  .banner h2 {
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+  .nav span {
+    border: 1px solid white;
+    padding: .4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .logo h4 span {
+    border: 1px solid white;
+    padding: .3em .5em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .nav .nav-item {
+    color: white;
+    font-size: .6em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-self: center;
+    padding-top: .3em;
+    color: white;
+  }
+  .social {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  }
+  #nav1 {
+    order: 3;
+  }
+  #nav2 {
+    order: 4;
+  }
+  #nav3 {
+    order: 1;
+  }
+  #nav4 {
+    order: 2;
+  }
+  /*end of nav*/
+
+  .details h4 {
+    padding-bottom: 1.5em;
+  }
+
+  .details p {
+    padding:1.5em 0;
+  }
+
+  .details {
+    padding-bottom: 3em;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width:1500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookdoor-wide.jpg);
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    height: 200px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .banner {
+    color: black;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    color: white;
+  }
+  .banner h2 {
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+  .nav span {
+    border: 1px solid white;
+    padding: .4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .logo h4 span {
+    border: 1px solid white;
+    padding: .3em .5em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .nav .nav-item {
+    color: white;
+    font-size: .6em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-self: center;
+    padding-top: .3em;
+    color: white;
+  }
+  .social {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  }
+  #nav1 {
+    order: 3;
+  }
+  #nav2 {
+    order: 4;
+  }
+  #nav3 {
+    order: 1;
+  }
+  #nav4 {
+    order: 2;
+  }
+  /*end of nav*/
+
+  .headline h2 {
+    font-size: 50px;
+  }
+
+  .details h4 {
+    padding-bottom: 1.5em;
+  }
+
+  .details p {
+    padding:1.5em 0;
+  }
+
+  .details {
+    padding-bottom: 3em;
+  }
+}
+
+
+/*wide*/
+
+@media only screen and (min-width: 1501px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookshelf.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    border: 1px solid black;
+    height: 300px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .banner {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    color: white;
+  }
+  .nav span {
+    border: 1px solid white;
+    padding: .4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+  .banner h2 {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+  }
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+  .logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .logo h4 span {
+    border: 1px solid white;
+    padding: .3em .5em;
+    border-radius: 5px;
+    color: black;
+    font-size: 2em;
+    color: white;
+  }
+  .nav .nav-item {
+    color: white;
+    font-size: .6em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 1.6em;
+    align-self: center;
+    padding-top: .3em;
+    color: white;
+  }
+  .social {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  }
+  #nav1 {
+    order: 3;
+  }
+  #nav2 {
+    order: 4;
+  }
+  #nav3 {
+    order: 1;
+  }
+  #nav4 {
+    order: 2;
+  }
+  /*end of nav*/
+
+  .headline h2 {
+    font-size: 50px;
+  }
+
+  .details h4 {
+    padding-bottom: 1.5em;
+  }
+
+  .details p {
+    padding:1.5em 0;
+  }
+
+  .details {
+    padding-bottom: 3em;
+  }
+
+  /*bottom nav*/
+  .nav-bottom .nav-item {
+    font-size: 1em;
+  }
+  .copyright p {
+    padding-bottom: 1em;
+    font-size: .8em;
+  }
+}

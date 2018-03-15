@@ -1,0 +1,1317 @@
+body * {
+  box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFF7;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Background Image and Nav*/
+
+.wrapper {
+  flex: 1 0 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookstore_mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  font-family: 'Old Standard TT', serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .75em;
+}
+
+.banner {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Old Standard TT', serif;
+  font-size: 2em;
+  margin: 5px;
+}
+
+.hero h4 {
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: .3em;
+  margin: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.nav-item {
+  flex: 1;
+  padding: .3em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1px;
+}
+
+.social-item {
+  height: 2em;
+  width: 2em;
+}
+
+.social img:first-child {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+/*End of Nav*/
+
+/*Opening Quote*/
+
+.opener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: .2em;
+  padding: .5em .75em;
+}
+
+.opener p:nth-of-type(2) {
+  padding-left: .75em;
+}
+
+/*About Section*/
+
+.intro {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 2em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 2em;
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+
+.intro p {
+  padding-left: .75em;
+  padding-right: .75em;
+  font-size: 26px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  font-family: 'Lora', serif;
+}
+
+.wrapper-intro-info {
+  padding-left: .75em;
+  padding-right: .75em;
+  width: 100%;
+}
+
+.intro-info p {
+  letter-spacing: 0.05em;
+  text-align: left;
+  font-size: 15px;
+  padding-bottom: 1em;
+  font-family: 'Lora', serif;
+}
+
+.intro-info p:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+/*End Of About Section*/
+
+/*Month Top Picks of Prose*/
+
+.prose {
+  font-family: 'Lora', serif;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.prose-img-quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.prose-img {
+  border: 1px solid;
+  display: flex;
+}
+
+.prose-img img {
+  width: 100%;
+  max-height: 50vh;
+}
+
+.prose-quote {
+  display: flex;
+  font-size: 15px;
+  padding-right: .75em;
+  padding-left: .75em;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  padding-bottom: 3em;
+  padding-top: .3em;
+}
+
+.prose-quote span {
+  font-weight: 600;
+}
+
+/*Featured Books*/
+
+.featured {
+  font-family: 'Lora', serif;
+  padding-bottom: 1em;
+}
+
+.featured-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+}
+
+.flex-image img {
+  display: flex;
+  height: 60vh;
+}
+
+.bio {
+  padding-left: .75em;
+  padding-right: .75em;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  padding-bottom: 3em;
+  padding-top: .3em;
+}
+
+.bio h4 {
+  padding-bottom: .5em;
+}
+
+.bio span {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: .2em .6em;
+  font-weight: bold;
+}
+
+/*end featured books*/
+
+/*Video*/
+
+.media {
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+.media iframe {
+  width: 100%;
+  height: 200px;
+}
+
+/*end video*/
+
+/*Inspiration and Images*/
+
+.image-wrapper {
+  font-family: 'Lora', serif;
+  margin-bottom: 30px;
+}
+
+.image-container h1 {
+  padding-bottom: 1em;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper img {
+  height: 16em;
+  width: 100%;
+}
+
+.quote-author {
+  width: 80%;
+}
+
+.quotes {
+  padding: .75em .75em .5em;
+  font-size: 1em;
+}
+
+.author {
+  padding-left: 3em;
+  font-size: 14px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+/*end inspiration and images*/
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Old Standard TT', serif;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  padding-bottom: .75em;
+}
+
+.nav-bottom .nav-item {
+  color: white;
+  font-size: 10px;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: .75em;
+}
+
+.social-footer .social-item {
+  height: 2em;
+  width: 2em;
+}
+
+.social-footer .social-item:first-child {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright p {
+  font-size: 10px;
+  color: white;
+}
+
+.footer {
+  background-color: #0F0E0C;
+}
+
+/*end footer*/
+
+/*Tiny Screens*/
+
+@media only screen and (max-width: 262px) {
+  /*front page and nav*/
+  .wrapper {
+    flex: 1 0 305px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bookstore_mobile.jpg);
+    /*site: https://pixabay.com/p-482970/?no_redirect*/
+    background-size: cover;
+    background-position: center;
+    height: 305px;
+    width: 100%;
+    font-family: 'Old Standard TT', serif;
+  }
+  .banner {
+    font-size: 1.5em;
+  }
+  .hero h4 {
+    font-size: .85em;
+  }
+  .nav-item {
+    font-size: .75em;
+  }
+  .social-item {
+    height: 1.5em;
+    width: 1.5em;
+  }
+  .social img:first-child {
+    height: 1.125em;
+    width: 1.125em;
+  }
+  .footer {
+    background-color: #0F0E0C;
+  }
+  .nav-bottom .nav-item {
+    color: white;
+  }
+  .copyright p {
+    color: white;
+  }
+}
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 501px) and (max-width: 910px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*nav bar and opening page*/
+  .wrapper {
+    flex: 1 0 500px;
+  }
+  .hero {
+    height: 500px;
+  }
+  #nav1 {
+    order: 2;
+  }
+  #nav2 {
+    order: 1;
+  }
+  #nav3 {
+    order: 3;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  .hero header {
+    padding-top: .1em;
+    font-size: 1.6em;
+  }
+  .banner {
+    font-size: 2.5em;
+  }
+  /*ending of nav bar*/
+  /*intro*/
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .intro .header {
+    width: 80%;
+  }
+  .header {
+    font-size: 1.5em;
+  }
+  .intro p {
+    font-size: 2em;
+    width: 80%;
+  }
+  /*end of intro*/
+  .wrapper-intro-info {
+    display: flex;
+    justify-content: center;
+  }
+  .intro-info {
+    width: 80%;
+  }
+  .intro-info p {
+    font-size: 1.3em;
+  }
+  /*quote of month*/
+  .prose {
+    padding-bottom: 2em;
+  }
+  .prose-img-quote {
+    display: flex;
+    flex-direction: row;
+  }
+  .prose-img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .prose-img img {
+    max-height: 45vh;
+    max-width: 50vw;
+  }
+  .prose-quote {
+    display: flex;
+    font-size: 15px;
+    padding-right: .75em;
+    padding-left: .75em;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    padding-bottom: 3em;
+    padding-top: .3em;
+    width: 50%;
+  }
+  .prose-quote span {
+    font-weight: 600;
+  }
+  /*inspiration*/
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  .image-wrapper img {
+    height: 18em;
+    width: 480px;
+  }
+  .quote-author {
+    width: 480px;
+  }
+  /*end of inspiration*/
+  /*Featured Section*/
+  .featured-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-image {
+    width: 50%;
+    margin-top: 1em;
+  }
+  .flex-image img {
+    display: flex;
+    height: 50vh;
+    max-width: 100%;
+  }
+  .bio {
+    width: 50%;
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+  #item1 {
+    order: 1;
+  }
+  #item2 {
+    order: 2;
+  }
+  #item3 {
+    order: 4;
+  }
+  #item4 {
+    order: 3;
+  }
+  #item5 {
+    order: 5;
+  }
+  #item6 {
+    order: 6;
+  }
+  #item7 {
+    order: 8;
+  }
+  #item8 {
+    order: 7;
+  }
+  /*End of Featured Section*/
+  .mid-parallax {
+    background: url("images/stack.jpg") no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 200px;
+  }
+  .footer {
+    background-color: #0F0E0C;
+  }
+  .nav-bottom .nav-item {
+    color: white;
+  }
+  .copyright p {
+    color: white;
+  }
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 911px) and (max-width: 1200px) {
+  /*first page*/
+  .wrapper {
+    flex: 1 0 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/books.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  #nav1 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  #nav2 {
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+  }
+  #nav3 {
+    order: 3;
+  }
+  .hero header h1 span:nth-of-type(1) {
+    padding-right: 6em;
+  }
+  .hero header h1 span:nth-of-type(3) {
+    padding-left: 6em;
+  }
+  .hero header h4 {
+    font-size: 2em;
+  }
+  .banner {
+    font-size: 3.5em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .nav-item {
+    padding: 1.5em;
+    text-transform: uppercase;
+  }
+  .social .social-item {
+    height: 3em;
+    width: 3em;
+  }
+  .social img:first-child {
+    height: 2.25em;
+    width: 2.25em;
+  }
+  .social img:nth-of-type(2) {
+    padding-left: .8em;
+    padding-right: .2em;
+    width: 3.8em;
+  }
+  .social {
+    justify-content: center;
+  }
+  /*end of first page*/
+  /*intro*/
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .intro .header {
+    width: 60%;
+  }
+  .header {
+    font-size: 1.5em;
+  }
+  .intro p {
+    font-size: 2em;
+    width: 60%;
+  }
+  .wrapper-intro-info {
+    display: flex;
+    justify-content: center;
+  }
+  .intro-info {
+    width: 680px;
+  }
+  .intro-info p {
+    font-size: 1.3em;
+  }
+  /*end of intro*/
+  /*passage of the month*/
+  .prose {
+    padding-bottom: 5em;
+  }
+  .prose-img-quote {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .prose-img {
+    border: 4px solid;
+    border-radius: 5px;
+  }
+  .prose-img img {
+    max-height: 50vh;
+    max-width: 50vw;
+  }
+  .prose-quote {
+    display: flex;
+    width: 680px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+  }
+  .prose-quote span {
+    font-weight: 600;
+  }
+  /*end of passage of month section*/
+  /*featured books*/
+  .featured-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bio {
+    font-size: 1.3em;
+  }
+  .flex-image {
+    width: 50%;
+    margin-top: 1em;
+  }
+  .flex-image img {
+    display: flex;
+    height: 50vh;
+    max-width: 100%;
+  }
+  .bio {
+    width: 50%;
+    margin-top: 1em;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-bio {
+    width: 80%;
+  }
+  #item1 {
+    order: 1;
+  }
+  #item2 {
+    order: 3;
+  }
+  #item3 {
+    order: 2;
+  }
+  #item4 {
+    order: 4;
+  }
+  #item5 {
+    order: 5;
+  }
+  #item6 {
+    order: 7;
+  }
+  #item7 {
+    order: 6;
+  }
+  #item8 {
+    order: 8;
+  }
+  /*end of featured*/
+  /*mid parallax*/
+  .mid-parallax {
+    background: url("images/stack.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }
+  /*end of mid-parallax*/
+  /*inspiration*/
+  .image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .image {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .image-container img {
+    height: 300px;
+    width: 450px;
+  }
+  .quote-author {
+    width: 40%;
+    text-align: left;
+    font-weight: lighter;
+    font-family: 'Lora', serif;
+  }
+  .quotes {
+    font-size: 1.4em;
+  }
+  .author {
+    font-size: 1.2em;
+  }
+  #one {
+    order: 1;
+  }
+  #two {
+    order: 3;
+  }
+  #three {
+    order: 2;
+  }
+  #four {
+    order: 4;
+  }
+  #five {
+    order: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  #six {
+    order: 6;
+  }
+  .footer {
+    background-color: #0F0E0C;
+  }
+  .nav-bottom .nav-item {
+    color: white;
+  }
+  .copyright p {
+    color: white;
+  }
+}
+
+/*desktop + 4k*/
+
+@media only screen and (min-width: 1201px) and (max-width:1500px) {
+  .wrapper {
+    flex: 1 0 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/books.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  #nav1 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  #nav2 {
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+  }
+  #nav3 {
+    order: 3;
+  }
+  .hero header h1 span:nth-of-type(1) {
+    padding-right: 6em;
+  }
+  .hero header h1 span:nth-of-type(3) {
+    padding-left: 6em;
+  }
+  .hero header h4 {
+    font-size: 2em;
+  }
+  .banner {
+    font-size: 3.5em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .nav-item {
+    padding: 1.5em;
+    text-transform: uppercase;
+  }
+  .social .social-item {
+    height: 3em;
+    width: 3em;
+  }
+  .social img:first-child {
+    height: 2.25em;
+    width: 2.25em;
+  }
+  .social img:nth-of-type(2) {
+    padding-left: .8em;
+    padding-right: .2em;
+    width: 3.8em;
+  }
+  .social {
+    justify-content: center;
+  }
+  /*end of first page*/
+  /*intro*/
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .intro .header {
+    width: 60%;
+  }
+  .header {
+    font-size: 1.5em;
+  }
+  .intro p {
+    font-size: 2em;
+    width: 60%;
+  }
+  .wrapper-intro-info {
+    display: flex;
+    justify-content: center;
+  }
+  .intro-info {
+    width: 680px;
+  }
+  .intro-info p {
+    font-size: 1.3em;
+  }
+  /*end of intro*/
+  /*passage of the month*/
+  .prose {
+    padding-bottom: 5em;
+  }
+  .prose-img-quote {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .prose-img {
+    border: 4px solid;
+    border-radius: 5px;
+  }
+  .prose-img img {
+    max-height: 65vh;
+    max-width: 50vw;
+  }
+  .prose-quote {
+    display: flex;
+    width: 680px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+  }
+  .prose-quote span {
+    font-weight: 600;
+  }
+  /*end of passage of month section*/
+  /*featured books*/
+  .featured-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bio {
+    font-size: 1.3em;
+  }
+  .flex-image {
+    width: 25%;
+    margin-top: 1em;
+  }
+  .flex-image img {
+    display: flex;
+    height: 40vh;
+    max-width: 90%;
+  }
+  .bio {
+    width: 25%;
+    margin-top: 1em;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-bio {
+    width: 80%;
+  }
+  #item1 {
+    order: 1;
+  }
+  #item2 {
+    order: 5;
+  }
+  #item3 {
+    order: 2;
+  }
+  #item4 {
+    order: 6;
+  }
+  #item5 {
+    order: 3;
+  }
+  #item6 {
+    order: 7;
+  }
+  #item7 {
+    order: 4;
+  }
+  #item8 {
+    order: 8;
+  }
+  /*end of featured*/
+  /*parallax*/
+  .mid-parallax {
+    background: url("images/stack.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }
+  /*end of parallax*/
+  /*inspiration*/
+  .image-wrapper {
+    padding-top: 4em;
+  }
+  .image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .image {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .image-container img {
+    min-height: 35vh;
+    max-width: 500px;
+  }
+  .quote-author {
+    max-width: 500px;
+    text-align: left;
+    font-weight: lighter;
+    font-family: 'Lora', serif;
+  }
+  .quotes {
+    font-size: 1.4em;
+  }
+  .author {
+    font-size: 1.2em;
+  }
+  #one {
+    order: 1;
+  }
+  #two {
+    order: 3;
+  }
+  #three {
+    order: 2;
+  }
+  #four {
+    order: 4;
+  }
+  #five {
+    order: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  #six {
+    order: 6;
+  }
+  /*end of inspiration*/
+  /*footer*/
+  .footer .nav-item {
+    font-size: 1.3em;
+    color: white;
+  }
+  .footer .social-item {
+    height: 3em;
+    width: 3em;
+  }
+  .copyright p {
+    color: white;
+  }
+  .footer img:first-child {
+    height: 2.25em;
+    width: 2.25em;
+  }
+  .footer img:nth-of-type(2) {
+    padding-left: .8em;
+    padding-right: .2em;
+    width: 3.8em;
+  }
+  .footer {
+    background-color: #0F0E0C;
+  }
+}
+
+@media only screen and (min-width: 1501px) {
+  .wrapper {
+    flex: 1 0 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/books.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .nav a:hover {
+    background-color: #DE9700;
+  }
+  #nav1 {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  #nav2 {
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+  }
+  #nav3 {
+    order: 3;
+  }
+  .hero header h1 span:nth-of-type(1) {
+    padding-right: 6em;
+  }
+  .hero header h1 span:nth-of-type(3) {
+    padding-left: 6em;
+  }
+  .hero header h4 {
+    font-size: 2em;
+  }
+  .banner {
+    font-size: 3.5em;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .nav-item {
+    padding: 1.5em;
+    text-transform: uppercase;
+  }
+  .social .social-item {
+    height: 3em;
+    width: 3em;
+  }
+  .social img:first-child {
+    height: 2.25em;
+    width: 2.25em;
+  }
+  .social img:nth-of-type(2) {
+    padding-left: .8em;
+    padding-right: .2em;
+    width: 3.8em;
+  }
+  .social {
+    justify-content: center;
+  }
+  /*end of first page*/
+  /*intro*/
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .intro .header {
+    width: 60%;
+  }
+  .header {
+    font-size: 1.5em;
+  }
+  .intro p {
+    font-size: 2em;
+    width: 60%;
+  }
+  .wrapper-intro-info {
+    display: flex;
+    justify-content: center;
+  }
+  .intro-info {
+    width: 680px;
+  }
+  .intro-info p {
+    font-size: 1.3em;
+  }
+  /*end of intro*/
+  /*passage of the month*/
+  .prose {
+    padding-bottom: 5em;
+  }
+  .prose-img {
+    display: none;
+  }
+  .prose-quote {
+    display: none;
+  }
+  #parallax {
+    background: url("images/fear1.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+  }
+  /*end of passage of month section*/
+  /*featured books*/
+  .featured-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bio {
+    font-size: 1.3em;
+  }
+  .flex-image {
+    width: 25%;
+    margin-top: 1em;
+  }
+  .flex-image img {
+    display: flex;
+    height: 40vh;
+    max-width: 90%;
+  }
+  .bio {
+    width: 25%;
+    margin-top: 1em;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-bio {
+    width: 80%;
+  }
+  #item1 {
+    order: 1;
+  }
+  #item2 {
+    order: 5;
+  }
+  #item3 {
+    order: 2;
+  }
+  #item4 {
+    order: 6;
+  }
+  #item5 {
+    order: 3;
+  }
+  #item6 {
+    order: 7;
+  }
+  #item7 {
+    order: 4;
+  }
+  #item8 {
+    order: 8;
+  }
+  /*end of featured*/
+  /*inspiration*/
+  .image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .image {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .image-container img {
+    min-height: 35vh;
+    max-width: 500px;
+  }
+  .quote-author {
+    max-width: 500px;
+    text-align: left;
+  }
+  .quotes {
+    font-size: 1.4em;
+  }
+  .author {
+    font-size: 1.2em;
+  }
+  #one {
+    order: 1;
+  }
+  #two {
+    order: 4;
+  }
+  #three {
+    order: 2;
+  }
+  #four {
+    order: 5;
+  }
+  #five {
+    order: 3;
+  }
+  #six {
+    order: 6;
+  }
+  .footer .nav-item {
+    font-size: 1.3em;
+    color: white;
+  }
+  .nav-bottom .nav-item:hover {
+    background-color: #DE9700;
+  }
+  .copyright p {
+    color: white;
+    font-size: 1em;
+  }
+  .footer .social-item {
+    height: 3em;
+    width: 3em;
+  }
+  #firstsocial {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .footer {
+    background-color: #0F0E0C;
+  }
+}

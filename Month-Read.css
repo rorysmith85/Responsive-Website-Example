@@ -1,0 +1,1151 @@
+body * {
+  box-sizing: border-box;
+}
+
+html body {
+  margin:0;
+  padding:0;
+  background-color: #FFFFF7;
+}
+
+
+/*nav*/
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex:1 0 400px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(images/bookstore_mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width:100%;
+  font-family: 'Old Standard TT', serif;
+  color:white;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: .3em;
+}
+.nav-item {
+  text-decoration: none;
+  color:white;
+  padding-top: .2em;
+}
+
+.banner h2 {
+  margin:0;
+  text-align: center;
+}
+
+.logo h4 span {
+  border:1px solid white;
+  padding:.3em .5em;
+  border-radius: 5px;
+}
+
+.banner {
+  padding-top: 1em;
+}
+
+.social {
+  display:flex;
+  align-items: center;
+}
+
+
+.social-item {
+  height:2em;
+  width:2em;
+}
+
+
+.social img:first-child {
+  height:1.5em;
+  width:1.5em;
+  padding-right: .2em;
+}
+/*end of nav*/
+
+/*book of month*/
+.intro > * {
+  font-family: 'Lora', serif;
+}
+
+.intro {
+  text-align: center;
+  margin:10px;
+  padding-bottom: 2em;
+}
+
+.intro h4:nth-of-type(1) {
+  text-decoration: underline;
+}
+
+.intro p {
+  text-align: left;
+  padding:0 1em;
+  line-height: 1.4em;
+  letter-spacing: .03em;
+
+}
+/*end of intro*/
+
+/*book image*/
+.book-image {
+  display:flex;
+  justify-content: center;
+}
+
+.book-image img {
+  height:45vh;
+  width:auto;
+}
+/*end of book image*/
+
+/*litcrit*/
+.litcrit > * {
+    font-family: 'Lora', serif;
+  }
+
+.litcrit {
+  margin:10px;
+  padding-bottom: 5em;
+  padding-top: 5em;
+}
+
+.litcrit h3 {
+  text-align: center;
+}
+
+.litcrit p {
+  padding:0 1em;
+  line-height: 1.4em;
+  letter-spacing: .03em;
+}
+/*end of litcrit*/
+
+/*author*/
+
+.author > * {
+  font-family: 'Lora', serif;
+}
+
+.author {
+  margin-top: 30px;
+}
+.author h3, .author h4 {
+  margin:.5em;
+  text-align: center;
+}
+
+.image-caption {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.image-caption p {
+  font-size: .5em;
+  padding-right: 1em;
+}
+
+.author p {
+  padding:0 2em;
+  line-height: 1.4em;
+  letter-spacing: .03em;
+}
+
+.quote {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote p {
+  width:70%;
+  margin:5px;
+}
+
+.quote p:nth-of-type(1) {
+  font-style: italic;
+  padding: 1em 0;
+  font-size: 1.5em;
+}
+
+.quote p:nth-of-type(2) {
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+/*end of author*/
+
+/*other reviews*/
+
+.reviews > * {
+  font-family: 'Lora', serif;
+}
+
+.reviews {
+  margin-bottom: 1em;
+}
+
+.reviews h3 {
+  text-align: center;
+}
+
+.flex-review {
+  display: flex;
+  text-decoration: none !important;
+  border:1px solid grey;
+  margin:.3em 0;
+}
+
+.image {
+  width:50%;
+}
+
+.image img {
+  width:100%;
+  height:100%;
+}
+
+.review {
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+.review p {
+  color:black;
+  padding-left: .3em;
+  font-size: 1.2em;
+
+}
+
+
+
+/*bottom nav*/
+.nav-bottom .nav-item {
+  color:black;
+}
+
+.footer {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Old Standard TT', serif;
+  color:black;
+  background-color: #0F0E0C;
+}
+
+.nav-bottom {
+  display:flex;
+  justify-content: space-around;
+  padding: .75em 0;
+}
+
+.nav-bottom .nav-item {
+  color:white;
+  font-size: 10px;
+  font-size: .8em;
+}
+
+.social-footer {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: .75em;
+}
+
+.social-footer .social-item {
+  height: 2em;
+  width:2em;
+}
+
+.social-footer .social-item:first-child {
+  height:1.5em;
+  width:1.5em;
+}
+
+.copyright {
+  display:flex;
+  justify-content: center;
+  color:white;
+}
+
+.copyright p {
+  font-size: .5em;
+}
+/*end of bottom nav*/
+
+
+
+@media only screen and (min-width: 501px) and (max-width: 910px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(images/bookdoor-wide.jpg);
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    border:1px solid black;
+    height:200px;
+    margin-bottom: 30px;
+    width:100%;
+    background-color: #0F0E0C;
+  }
+
+  .banner {
+    color:black;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: flex-start;
+    color:white;
+  }
+
+  .banner h2 {
+    width:100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+
+  .nav span {
+    border:1px solid white;
+    padding:.4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+
+  .logo {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .logo h4 span {
+    border:1px solid white;
+    padding:.3em .5em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color:white;
+  }
+
+  .nav .nav-item {
+    color:white;
+    font-size: .6em;
+  }
+
+  .nav {
+    display:flex;
+    flex-direction: row;
+    flex:3;
+    width:80%;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-self: center;
+    padding-top:.3em;
+    color:white;
+  }
+
+  .social {
+    display:flex;
+    width:20%;
+    justify-content: space-around;
+  }
+
+
+
+
+
+  #nav1{order:3;}
+  #nav2{order:4;}
+  #nav3{order:1;}
+  #nav4{order:2;}
+
+  /*end of nav*/
+
+/*intro*/
+.intro {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  width:75%;
+}
+
+.intro h2, .intro h4 {
+  padding-bottom: 1em;
+}
+/*end of intro*/
+
+/*litcrit*/
+.litcrit {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.litcrit h3{
+  padding-top: 1.4em;
+  padding-bottom: 1em;
+}
+
+  .litcrit p {
+   padding-bottom: 1em;
+   width:75%;
+ }
+/*end of litcrit*/
+
+/*author photo*/
+.author {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#p4 {
+  padding-top: 1.5em;
+}
+
+.author h3 {
+  padding-top: .8em;
+  padding-bottom: .5em;
+}
+
+.author h4 {
+  padding-bottom: .8em;
+}
+
+.author p {
+  padding-bottom: 1em;
+  width:75%;
+}
+
+#final-image-text {
+  padding-top:1em;
+}
+/*end of author*/
+
+/*reviews*/
+.reviews h3 {
+  padding: 1em 0;
+}
+
+/*end of review*/
+
+/*bottom nav*/
+.copyright p {
+  padding-bottom: 1em;
+}
+
+
+
+}
+
+
+
+
+/* Laptop+ Desktop Styles */
+@media only screen and (min-width: 911px) and (max-width: 1200px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(images/bookdoor-wide.jpg);
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    border:1px solid black;
+    height:200px;
+    margin-bottom: 30px;
+    width:100%;
+    background-color: #0F0E0C;
+  }
+
+  .banner {
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: flex-start;
+    color:white;
+  }
+
+  .nav span {
+    border:1px solid white;
+    padding:.4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+
+  .banner h2 {
+    width:100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+
+  .logo {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .logo h4 span {
+    border:1px solid white;
+    padding:.3em .5em;
+    border-radius: 5px;
+    color:black;
+    font-size: 1.5em;
+    color:white;
+  }
+
+  .nav .nav-item {
+    color:white;
+    font-size: .6em;
+  }
+
+  .nav {
+    display:flex;
+    flex-direction: row;
+    flex:3;
+    width:80%;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-self: center;
+    padding-top:.3em;
+    color:white;
+  }
+
+  .social {
+    display:flex;
+    width:20%;
+    justify-content: space-around;
+  }
+
+
+
+
+
+  #nav1{order:3;}
+  #nav2{order:4;}
+  #nav3{order:1;}
+  #nav4{order:2;}
+
+  /*end of nav*/
+
+/*intro*/
+.intro {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  width:75%;
+}
+
+.intro h2, .intro h4 {
+  padding-bottom: 1em;
+}
+/*end of intro*/
+
+/*litcrit*/
+.litcrit {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.litcrit h3{
+  padding-top: 1.4em;
+  padding-bottom: 1em;
+}
+
+  .litcrit p {
+   padding-bottom: 1em;
+   width:65%;
+ }
+/*end of litcrit*/
+
+/*author photo*/
+.author {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-caption {
+  display:flex;
+  align-items: center;
+}
+
+.image-caption img {
+  width:80%;
+  border:1px solid black;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px #070000;
+}
+
+#p4 {
+  padding-top: 1.5em;
+}
+
+.author h3 {
+  padding-top: .8em;
+  padding-bottom: .5em;
+}
+
+.author h4 {
+  padding-bottom: .8em;
+}
+
+.author p {
+  padding-bottom: 1em;
+  width:65%;
+}
+
+#final-image-text {
+  padding-top:1em;
+}
+/*end of author*/
+
+/*reviews*/
+.reviews {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reviews h3 {
+  width:100%;
+  padding: 1em 0;
+}
+
+
+.flex-review {
+  width:50%;
+}
+/*end of review*/
+
+/*bottom nav*/
+.copyright p {
+  padding-bottom: 1em;
+}
+
+
+
+
+}
+
+
+
+/*desktop + 4k*/
+@media only screen and (min-width: 1201px) and (max-width:1500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(images/bookdoor-wide.jpg);
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    border:1px solid black;
+    height:200px;
+    margin-bottom: 30px;
+    width:100%;
+    background-color: #0F0E0C;
+  }
+
+  .banner {
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: flex-start;
+    color:white;
+  }
+
+  .nav span {
+    border:1px solid white;
+    padding:.4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+
+  .banner h2 {
+    width:100%;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+
+  .logo {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .logo h4 span {
+    border:1px solid white;
+    padding:.3em .5em;
+    border-radius: 5px;
+    color:black;
+    font-size: 1.5em;
+    color:white;
+  }
+
+  .nav .nav-item {
+    color:white;
+    font-size: .6em;
+  }
+
+  .nav {
+    display:flex;
+    flex-direction: row;
+    flex:3;
+    width:80%;
+    justify-content: space-around;
+    font-size: 1.2em;
+    align-self: center;
+    padding-top:.3em;
+    color:white;
+  }
+
+  .social {
+    display:flex;
+    width:20%;
+    justify-content: space-around;
+  }
+
+
+
+
+
+  #nav1{order:3;}
+  #nav2{order:4;}
+  #nav3{order:1;}
+  #nav4{order:2;}
+
+  /*end of nav*/
+
+/*intro*/
+.intro {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  width:700px;
+}
+
+.intro h2, .intro h4 {
+  padding-bottom: 1em;
+}
+/*end of intro*/
+
+/*litcrit*/
+.litcrit {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.litcrit h3{
+  padding-top: 1.4em;
+  padding-bottom: 1em;
+}
+
+  .litcrit p {
+   padding-bottom: 1em;
+   width:700px;
+ }
+/*end of litcrit*/
+
+/*author photo*/
+.author {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-caption {
+  display:flex;
+  align-items: center;
+}
+
+.image-caption img {
+  width:80%;
+  border:1px solid black;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px #070000;
+}
+
+#p4 {
+  padding-top: 1.5em;
+}
+
+.quote {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author .quote p{
+  width:60%;
+}
+
+.author .quote p:nth-of-type(2) {
+  padding-bottom: 3em;
+}
+
+.author h3 {
+  padding-top: .8em;
+  padding-bottom: .5em;
+}
+
+.author h4 {
+  padding-bottom: .8em;
+}
+
+.author p {
+  padding-bottom: 2em;
+  width:700px;
+}
+
+#final-image-text {
+  padding-top:3em;
+}
+/*end of author*/
+
+/*reviews*/
+.reviews {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reviews h3 {
+  width:100%;
+  padding: 1em 0;
+}
+
+
+
+.flex-review {
+  width:50%;
+}
+/*end of review*/
+
+/*bottom nav*/
+.copyright p {
+  padding-bottom: 1em;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1501px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(images/bookshelf.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Old Standard TT', serif;
+    padding-top: .4em;
+    border:1px solid black;
+    height:300px;
+    margin-bottom: 30px;
+    width:100%;
+  }
+
+  .banner {
+    padding:0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: flex-start;
+    color:white;
+  }
+
+  .nav span {
+    border:1px solid white;
+    padding:.4em .5em .3em .5em;
+    border-radius: 5px;
+  }
+
+  .banner h2 {
+    width:100%;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .banner h2:nth-of-type(1) {
+    padding-right: 8em;
+  }
+
+  .banner h2:nth-of-type(3) {
+    padding-left: 9em;
+  }
+
+  .logo {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .logo h4 span {
+    border:1px solid white;
+    padding:.3em .5em;
+    border-radius: 5px;
+    color:black;
+    font-size: 2em;
+    color:white;
+  }
+
+  .nav .nav-item {
+    color:white;
+    font-size: .6em;
+  }
+
+  .nav {
+    display:flex;
+    flex-direction: row;
+    flex:3;
+    width:80%;
+    justify-content: space-around;
+    font-size: 1.6em;
+    align-self: center;
+    padding-top:.3em;
+    color:white;
+  }
+
+  .social {
+    display:flex;
+    width:20%;
+    justify-content: space-around;
+  }
+
+  #nav1{order:3;}
+  #nav2{order:4;}
+  #nav3{order:1;}
+  #nav4{order:2;}
+
+  /*end of nav*/
+
+/*intro*/
+.intro {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  width:900px;
+  font-size: 1.4em;
+}
+
+.intro h2 {
+  font-size: 1.8em;
+}
+
+.intro h4 {
+  font-size: 1.5em;
+}
+
+.intro h2, .intro h4 {
+  padding-bottom: 1em;
+}
+/*end of intro*/
+
+/*litcrit*/
+.litcrit {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.litcrit h3{
+  padding-top: 1.4em;
+  padding-bottom: 1em;
+  font-size: 1.6em;
+}
+
+  .litcrit p {
+   padding-bottom: 1em;
+   width:900px;
+   font-size: 1.4em;
+ }
+/*end of litcrit*/
+
+/*author photo*/
+.author {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-caption {
+  display:flex;
+  align-items: center;
+}
+
+.image-caption img {
+  width:80%;
+  border:1px solid black;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px #070000;
+}
+
+#p4 {
+  padding-top: 1.5em;
+}
+
+.quote {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author .quote p{
+  width:60%;
+  font-size: 2em;
+}
+
+.author .quote p:nth-of-type(2) {
+  padding-bottom: 3em;
+  font-size: 1.7em;
+}
+
+.author h3 {
+  padding-top: .8em;
+  padding-bottom: .5em;
+  font-size: 1.6em;
+}
+
+.author h4 {
+  padding-bottom: .8em;
+  font-size: 1.4em;
+}
+
+.author p {
+  padding-bottom: 2em;
+  width:900px;
+  font-size: 1.4em;
+}
+
+#final-image-text {
+  padding-top:3em;
+}
+/*end of author*/
+
+/*reviews*/
+.reviews {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+}
+
+.reviews h3 {
+  width:100%;
+  padding: 1em 0;
+  font-size: 1.6em;
+}
+
+
+
+.flex-review {
+  width:50%;
+}
+/*end of review*/
+
+/*bottom nav*/
+.nav-bottom .nav-item {
+  font-size:1em;
+}
+
+.copyright p {
+  padding-bottom: 1em;
+  font-size: .8em;
+}
+
+}
